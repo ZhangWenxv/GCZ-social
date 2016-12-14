@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>关于我们</title>
+
+<link rel="stylesheet" type="text/css" href="css/head.css">
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<style>
+body
+    {
+        background-color: beige;
+    }
+div.img
+{
+  margin: 2px;
+  height: auto;
+  width: auto;
+  float: left;
+  
+}	
+
+</style>
+</head>
+<body>
+<!--header -->
+<div class="header">
+    <header>
+	<div class="headerinner">
+		<ul class="headernav">
+			<li class="logo">
+				<!---<img src="" alt="" />--->
+			</li>
+			<li><a href="home.html">首页</a></li>
+			<li><a href="make.html" >新建问答</a></li>
+			<li><a href="popanswer.html">人气问答排名</a></li>
+			<li><a href="index.html" >好友推送</a></li>
+			<li><a href="about.html" >about</a></li>
+			<li class="search">
+				<a class="search_pic"></a>
+			</li>
+			<li class="list">
+				<a></a>
+			</li>
+		</ul>
+		<!-- 搜索 -->
+		<form action="">
+			<div class="search_main">
+				<button class="search_btn" type="submit"></button>
+				<input class="search_text" type="text" placeholder="搜索">
+				<span class="close_btn"></span>
+			</div>
+		</form>
+		<!-- 登录 -->
+		<div class="member">
+			<p>用户中心</p>
+			<ul>
+				<li>
+					<img src="img/huiyuan1.png" alt="">
+					<a href="login.html">登录</a>
+				</li>
+				<li>
+					<img src="img/huiyuan1.png" alt="">
+					<a href="weibo.html">微博用户登录</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+  </header>
+</div>
+<script>
+$(function(){
+	/*搜索*/
+	$(".search_pic").click(function(){
+		$(".headernav").fadeOut(500);
+		$(".search_main").fadeIn(1000);
+	});
+	$(".search_main .close_btn").click(function(){
+		$(".search_main").fadeOut(500);
+		$(".headernav").fadeIn(1000);
+	});
+	/*登录*/
+	$(".list a").click(function(){
+		$(".member").slideToggle(500);
+	});
+
+});
+</script>
+<div style="text-align:center;margin:150px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+
+    </div>
+
+<!--headerend -->
+
+<!--content -->
+ <article id="content"><div class="table">
+         
+<img src="img/home-welcom_meitu_1.jpg" width="300" height="120" />
+
+<div style="opacity:0.5;position:absolute;left:50px;width:300px;height:150px;background-color:#40B3DF"></div>
+
+<div style="font-family:verdana;padding:20px;border-radius:10px;border:10px solid #EE872A;">
+
+<h1 style="text-align:center;">简介</h1>
+
+<div style="letter-spacing:12px;"> <h2> HIT 问答小站 <h2> </div><h2> 
+
+<div style="opacity:0.5;position:absolute;left:50px;width:300px;height:150px;background-color:#40B3DF"></div>
+
+<div style="font-family:verdana;padding:20px;border-radius:10px;border:10px solid #EE872A;">
+
+<div style="opacity:0.3;position:absolute;left:120px;width:100px;height:200px;background-color:#8AC007"></div>
+
+<hr />
+    <p>此网站为微博用户提供问答服务，方便了解来自四面八方的朋友。</p>
+    <hr />
+    <p>想要认识和你志趣相同的朋友吗，想要认识和你拥有同样兴趣爱好的朋友吗。</p>
+    <hr />
+    <p>那就请回答我们的问题，寻找你的好朋友吧！</p>
+    <hr />
+
+</div>
+
+
+</section>
+ </article>
+</div>
+<!--contentend -->
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6 ielt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7 ielt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>登录</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+<link rel="stylesheet" type="text/css" href="css/head.css">
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script language="javascript" src="js/pic.js"></script>
+<style>
+body
+    {
+        background-color: beige;
+    }
+div.img
+{
+  margin: 2px;
+  height: auto;
+  width: auto;
+  float: left;
+  
+}	
+
+</style>
+</head>
+<body>
+
+<div class="header">
+	<div class="headerinner">
+		<ul class="headernav">
+			<li class="logo">
+				<!---<img src="" alt="" />--->
+			</li>
+			<li><a href="home.html">首页</a></li>
+			<li><a href="make.html" >新建问答</a></li>
+			<li><a href="popanswer.html">人气问答排名</a></li>
+			<li><a href="index.html" >好友推送</a></li>
+			<li><a href="about.html" >about</a></li>
+			<li class="search">
+				<a class="search_pic"></a>
+			</li>
+			<li class="list">
+				<a></a>
+			</li>
+		</ul>
+		<!-- 搜索 -->
+		<form action="">
+			<div class="search_main">
+				<button class="search_btn" type="submit"></button>
+				<input class="search_text" type="text" placeholder="搜索">
+				<span class="close_btn"></span>
+			</div>
+		</form>
+		<!-- 登录 -->
+		<div class="member">
+			<p>用户中心</p>
+			<ul>
+				<li>
+					<img src="img/huiyuan1.png" alt="">
+					<a href="login.html">登录</a>
+				</li>
+				<li>
+					<img src="img/huiyuan1.png" alt="">
+					<a href="weibo.html">微博用户登录</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<script>
+$(function(){
+	/*搜索*/
+	$(".search_pic").click(function(){
+		$(".headernav").fadeOut(500);
+		$(".search_main").fadeIn(1000);
+	});
+	$(".search_main .close_btn").click(function(){
+		$(".search_main").fadeOut(500);
+		$(".headernav").fadeIn(1000);
+	});
+	/*登录*/
+	$(".list a").click(function(){
+		$(".member").slideToggle(500);
+	});
+
+});
+</script>
+
+    
+<body>
+<div class="container">
+	<section id="content">
+		<form action="">
+			<h1>登录</h1>
+			<div>
+				<input type="text" placeholder="用户名" required="" id="username" />
+			</div>
+			<div>
+				<input type="password" placeholder="密码" required="" id="password" />
+			</div>
+			<div>
+				<input type="submit" value="登录" />
+				<a href="#">忘记密码</a>
+				<a href="#">注册</a>
+			</div>
+		</form><!-- form -->
+	</section><!-- content -->
+    <a href="http://service.weibo.com/share/share.php?appkey=&title=&url=&pic=&searchPic=false&style=simple" target="_blank">
+</div><!-- container -->
+</body>
+</html>
